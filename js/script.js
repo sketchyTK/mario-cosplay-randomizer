@@ -153,14 +153,6 @@ const displayMarioPic = function () {
 //Add Event Listener - click - submit
 player1submit.addEventListener('click', displayMarioPic);
 
-let coinSound = new Audio('./sounds/mario-money-sound-edit.mp3');
-let oneUp = new Audio('./sounds/smb_1-up.mp3');
-let bump = new Audio('./sounds/smb_bump.mp3');
-
-coinSound.volume = 0.5;
-oneUp.volume = 0.5;
-bump.volume = 0.5;
-
 const coinTotal = document.querySelector('.coinTotal');
 const questionBlock = document.querySelector('.question-block');
 let coins = sessionStorage.getItem('savedCoins');
@@ -169,7 +161,7 @@ sessionStorage.removeItem('savedCoins');
 sessionStorage.setItem('savedCoins', 0);
 questionBlock.addEventListener('click', function () {
    // if the coin total is less that 99, then add 1
-   if (coins <= 8) {
+   if (coins <= 98) {
       coins++;
       coinTotal.textContent = coins;
       coinSound.play();

@@ -20,50 +20,21 @@
     margin: 0 auto;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-font-size: 34px;
-font-family: 'Super Mario Bros. NES',"DejaVu Sans";
-text-align: center;
-}
-
-.input text {
-    font-size: 24px;
-    color: #000000;
-    font-weight: 400;
-    font-family: "DejaVu Sans",'Super Mario Bros. NES';
-    width: 326px;
-    height: 65px;
-    background-color: #000000;
-    border: 5px solid #000000;
-
-}
-    .submit button {
-        font-size: 24px;
-        color: #000000;
-        font-weight: 400;
-        font-family:'Super Mario Bros. NES', "DejaVu Sans";  
-        width: 213px; 
-        height: 87px;
-        background-color: #000000;
-        border: 5px solid #000000;
-        text-align: center;
-    }
-    .form {
-    width: 400px;
-    height: auto;
+html, body, .wrapper {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-
-    }
-
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #84a2ef;
+    color: #ffffff;
+    font-size: 34px;
+    font-family: 'Super Mario Bros. NES', sans-serif;
+    text-align: center;
+}
 
 header {
     padding: 0;
@@ -80,44 +51,40 @@ header {
     font-size: 24px;
     color: #ffc8c1;
 }
-   main header {
-    font-size: 24px;
-    color: #ffffff;
-    border: 2px solid #000000;
-    text-align: center;
+
+nav ul{
+    height: 100%;
+    list-style: none;
     display: flex;
-
-
-}
-
-
-
-banner { 
+    margin: 0;
     padding: 0;
-    margin: 40px;
-    font-size: 150px;
-    line-height: 100px;
-    color: #ffc8c1;
+}    
+.nav li{
+    margin: 0 auto;
+    font-size: 24px;
+    color: #84a2fe;
+    margin-inline: 4rem;
+    line-height: 4rem;
+    outline: none;
     font-family: 'Super Mario Bros. NES';
-    text-align: center;
-    filter: drop-shadow (3.581px 10.401px 1px rgba(0,0,0,0.57));
-    width: 18px;
-    height: 16px;
-    width: 759px;
-    height: 438px;
-    border-radius: 5px;
-    background-color: #994e00;
 }
-    banner img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    filter: drop-shadow(6.128px5.142px 1px rgba(0,0,0,0.57));
-    background-color: #d6b99a;
+a {
+    color: white;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
 
+
+main{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.banner { 
+    padding: 0;
+    text-align: center;
 }
    
 .question-block {
@@ -145,18 +112,6 @@ banner {
     } 
 }
 
-.modal {
-font-size: 24px;
-color: #000000;
-text-align: center;
-font-family: 'Super Mario Bros. NES';
-color: #ffffff;
-margin: 200px;
-width: 482px;
-height: 291px;
-background-color: #ffffff;
-border: 3px soild #000000;
-}
 main {
     display: block;
     max-width: 800px;
@@ -167,42 +122,62 @@ main {
     font-size: 24px;
 }
 
+.form {
+width: 400px;
+height: auto;
+margin: 0;
+padding: 0;
+}
 
-
-nav ul{
-    height: 100%;
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}    
-.nav li{
-    margin: 0 auto;
+.input text {
     font-size: 24px;
-    color: #84a2fe;
-    margin-inline: 4rem;
-    line-height: 4rem;
-    outline: none;
-    font-family: 'Super Mario Bros. NES';
-}
-a{
-    color: white;
-    outline: none;
-    border:none;
-    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-family: "DejaVu Sans",'Super Mario Bros. NES';
+    width: 326px;
+    height: 65px;
+    background-color: #000000;
+    border: 5px solid #000000;
+
 }
 
-body{
-    margin: 0 auto;
-    padding: 0;
-    background-color: #84a2ef;
-    color: #ffffff;
-}
-
-main{
-    margin-top: 1rem;
+.submit button {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-family:'Super Mario Bros. NES', "DejaVu Sans";  
+    width: 213px; 
+    height: 87px;
+    background-color: #000000;
+    border: 5px solid #000000;
     text-align: center;
 }
+
+.modal {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Super Mario Bros. NES';
+    margin: 200px;
+    width: 482px;
+    height: 291px;
+    background-color: #994e00;
+    border: 3px soild #000000;
+}
+
+.modal {
+    position: fixed;
+    width: 90%;  
+    height: auto;
+    background-size: cover;
+    padding-bottom: 20px;      
+}
+.modal img {
+    margin: 50px auto 20px;
+    width: 280px;
+    height: 210px;
+}
+.modal p {font-size: 18px;}
 
 footer{
     position: fixed;
@@ -220,69 +195,45 @@ footer{
 }
    
    
-    @media screen and (min-width: 450px)  {
-       .question-block {
-        right: 20;
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 20px;
-       }
-    }
-        nav ul {flex-direction: column;
-        line-height: 24px;
-        margin: 0%;   
-        padding: 0%;
-        height: 384.5px;
-        align-content: space-evenly;
-        header {margin: 0 40px;}
-        }
-    
- 
-    @media screen and (max-width: 768px) 
-        main : padding 0 10px;
-        .modal {padding-bottom: 20px;
-         height: 128px;
-        z-index: 1;
-        position: relative;
-        bottom: 70px;
-        background-size: cover;
-         align-content: space-evenly
-        }
-    
-    
-     @media screen and (max-width: 1024px) {
-        header {margin: 0 auto;}
-        nav ul {flex-direction: column; margin-top: 20px}
-        nav ul li {line-height: 1.5em; margin-bottom: 20px; flex: 0 1;}
-        .banner {width: 90%; }
-    }
-        main {padding: 0 10px;
-        main p.topPlayer {font-size: 36px; margin-top: 50px;}
-        height: 138px;
-        z-index: 1;
-        position: relative;
-        bottom: 70px;
-        background-size: cover;
-        text-transform: uppercase;
-        line-height: 24px;
-        display: flex;
-        width: 100%;
-    }
-        .modal {
-            position: fixed;
-            width: 90%;  
-            height: auto;
-            background-size: cover;
-            padding-bottom: 20px;      
-        }
-        .modal img {
-            margin: 50px auto 20px;
-            width: 280px;
-            height: 210px;
-        }
-        .modal p {font-size: 18px;}
-    
-    
+@media screen and (min-width: 450px)  {
+.question-block {
+right: 20;
+display: flex;
+width: 100%;
+flex-direction: column;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+}
+nav ul {flex-direction: column;
+line-height: 24px;
+margin: 0%;   
+padding: 0%;
+height: 384.5px;
+align-content: space-evenly;
+header {margin: 0 40px;}
+}
 
+
+@media screen and (max-width: 768px) 
+main : padding 0 10px;
+.modal {padding-bottom: 20px;
+    height: 128px;
+z-index: 1;
+position: relative;
+bottom: 70px;
+background-size: cover;
+    align-content: space-evenly
+}
+
+
+@media screen and (max-width: 1024px) {
+header {margin: 0 auto;}
+nav ul {flex-direction: column; margin-top: 20px}
+nav ul li {line-height: 1.5em; margin-bottom: 20px; flex: 0 1;}
+.banner {width: 90%; }
+}
+main {padding: 0 10px;}
+main p.topPlayer {font-size: 36px; margin-top: 50px;}
+}
+ 

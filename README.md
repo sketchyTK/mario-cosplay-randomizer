@@ -57,7 +57,7 @@
 
 <div align=>
   <a href="https://github.com/github_username/repo_name">
-    <img src="Mario Cosplay Randomizer web.png" alt="Logo" width="800" height="600">
+    <img src="../img/screenshot.png" alt="Logo" width="800" height="600">
   
 
 
@@ -89,7 +89,7 @@ You must have a working internet connection to access the site. Once you have a 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be used to determine what form of Mario suits you for your application such as cosplaying.
+This project can be used to determine what form of Mario suits you for your application such as cosplaying. It is for entertainment purposes only. 
 
 
 
@@ -112,9 +112,7 @@ Project Link:[(https://github.com/keshon16/Project-1-it-s-mee/tree/main)]
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [https://developer.mozilla.org/en-US/]()
-* []()
-* []()
+Nintendo of America owns all licences to Mario, Super Mario, et al. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
