@@ -1,0 +1,13 @@
+Tasks for Mario Cosplay Idea Generatior (It's a Mee!)
+
+Write HTML for Page
+
+Write CSS for page & modal
+
+Write Javascript to include client-side storage to store persistent data
+
+Design CSS image assets for page (background, mario pics)
+
+Write ReadMe
+
+Create Presentation documents

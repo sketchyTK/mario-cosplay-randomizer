@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Super Mario Bros. NES';
+    src: url('SuperMarioBrosNES.eot');
+    src: url('SuperMarioBrosNES.eot?#iefix') format('embedded-opentype'),
+        url('SuperMarioBrosNES.woff2') format('woff2'),
+        url('SuperMarioBrosNES.woff') format('woff'),
+        url('SuperMarioBrosNES.ttf') format('truetype'),
+        url('SuperMarioBrosNES.svg#SuperMarioBros.NES') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: white;
+    padding: 0;
+    margin: 0 auto;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+font-size: 34px;
+font-family: 'Super Mario Bros. NES',"DejaVu Sans";
+text-align: center;
+}
+
+.input text {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "DejaVu Sans",'Super Mario Bros. NES';
+    width: 326px;
+    height: 65px;
+    background-color: #000000;
+    border: 5px solid #000000;
+
+}
+    .submit button {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 400;
+        font-family:'Super Mario Bros. NES', "DejaVu Sans";  
+        width: 213px; 
+        height: 87px;
+        background-color: #000000;
+        border: 5px solid #000000;
+        text-align: center;
+    }
+    .form {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    }
+
+
+header {
+    padding: 0;
+    margin: 0;
+    width: 1194px;;
+    height: 100%;
+    background-color: #000000;
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    color: #84a2fe;
+    font-family:'Super Mario Bros. NES';
+    text-align: center;
+    font-size: 24px;
+    color: #ffc8c1;
+}
+   main header {
+    font-size: 24px;
+    color: #ffffff;
+    border: 2px solid #000000;
+    text-align: center;
+    display: flex;
+
+
+}
+
+
+
+banner { 
+    padding: 0;
+    margin: 40px;
+    font-size: 150px;
+    line-height: 100px;
+    color: #ffc8c1;
+    font-family: 'Super Mario Bros. NES';
+    text-align: center;
+    filter: drop-shadow (3.581px 10.401px 1px rgba(0,0,0,0.57));
+    width: 18px;
+    height: 16px;
+    width: 759px;
+    height: 438px;
+    border-radius: 5px;
+    background-color: #994e00;
+}
+    banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: drop-shadow(6.128px5.142px 1px rgba(0,0,0,0.57));
+    background-color: #d6b99a;
+
+}
+   
+.question-block {
+    position: fixed;
+    top: 30%;
+    right: 20px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.question-block.coinBounce { 
+    animation: coinBounce 0.1s 1 linear;
+} 
+
+@keyframes coinBounce {
+    0% {
+        top: 30%; 
+    }
+    50% {
+        top: 29%; 
+    } 
+
+    100% {
+        top: 30%; 
+    } 
+}
+
+.modal {
+font-size: 24px;
+color: #000000;
+text-align: center;
+font-family: 'Super Mario Bros. NES';
+color: #ffffff;
+margin: 200px;
+width: 482px;
+height: 291px;
+background-color: #ffffff;
+border: 3px soild #000000;
+}
+main {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+nav ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}    
+.nav li{
+    margin: 0 auto;
+    font-size: 24px;
+    color: #84a2fe;
+    margin-inline: 4rem;
+    line-height: 4rem;
+    outline: none;
+    font-family: 'Super Mario Bros. NES';
+}
+a{
+    color: white;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #84a2ef;
+    color: #ffffff;
+}
+
+main{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Super Mario Bros. NES';
+    background-color:#a26501;
+    color: #905d09;
+    color: #935c00;
+    height: 135px;
+    border: 5px soild #000000;
+}
+   
+   
+    @media screen and (min-width: 450px)  {
+       .question-block {
+        right: 20;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       }
+    }
+        nav ul {flex-direction: column;
+        line-height: 24px;
+        margin: 0%;   
+        padding: 0%;
+        height: 384.5px;
+        align-content: space-evenly;
+        header {margin: 0 40px;}
+        }
+    
+ 
+    @media screen and (max-width: 768px) 
+        main : padding 0 10px;
+        .modal {padding-bottom: 20px;
+         height: 128px;
+        z-index: 1;
+        position: relative;
+        bottom: 70px;
+        background-size: cover;
+         align-content: space-evenly
+        }
+    
+    
+     @media screen and (max-width: 1024px) {
+        header {margin: 0 auto;}
+        nav ul {flex-direction: column; margin-top: 20px}
+        nav ul li {line-height: 1.5em; margin-bottom: 20px; flex: 0 1;}
+        .banner {width: 90%; }
+    }
+        main {padding: 0 10px;
+        main p.topPlayer {font-size: 36px; margin-top: 50px;}
+        height: 138px;
+        z-index: 1;
+        position: relative;
+        bottom: 70px;
+        background-size: cover;
+        text-transform: uppercase;
+        line-height: 24px;
+        display: flex;
+        width: 100%;
+    }
+        .modal {
+            position: fixed;
+            width: 90%;  
+            height: auto;
+            background-size: cover;
+            padding-bottom: 20px;      
+        }
+        .modal img {
+            margin: 50px auto 20px;
+            width: 280px;
+            height: 210px;
+        }
+        .modal p {font-size: 18px;}
+    
+    
+
