@@ -11,14 +11,9 @@
   <p align="center">
     Mario Cosplay Randomizer is an interactive application that provides an array of Mario cosplay ideas. It's the ideal application for enthusiasts of the Mario franchise looking for inspiration for their next cosplay.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -34,15 +29,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -57,7 +44,7 @@
 
 <div align=>
   <a href="https://github.com/github_username/repo_name">
-    <img src="../img/screenshot.png" alt="Logo" width="800" height="600">
+    <img src="screenshot.png" alt="Logo" width="100%" height="auto">
   
 
 
@@ -114,6 +101,9 @@ Project Link:[(https://github.com/keshon16/Project-1-it-s-mee/tree/main)]
 
 Nintendo of America owns all licences to Mario, Super Mario, et al. 
 
+Website font is <a href="https://fontstruct.com/fontstructions/show/1332355/arcade-classic-2-19" target="_blank">Super Mario Bros. NES</a> by TheWolfBunny.
+
+Banner image is <a href=" https://www.fontspace.com/super-plumber-brothers-font-f9287" target="_blank">Super Plumber Brothers Font</a> by Jackster Productions. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

@@ -80,11 +80,12 @@ const marioPics = [babyMario, builderMario,catMario, beeMario, booMario, capeMar
 
 //console.log(marioPics);
 const displayMarioPic = function () {
+   let marioImg = document.createElement('img');
+   let marioTxt = document.createElement('p');
    //display modal -> 
    marioModal.setAttribute( 'style', 'display: block;');
    let secondsLeft = 2;
-   function setTime() {
-   
+   function setTime() {   
    let timerInterval = setInterval(function () { 
    secondsLeft--; 
  //  console.log(secondsLeft);
@@ -115,8 +116,7 @@ const displayMarioPic = function () {
    // Clear the top player table
  // randoMario.innerHTML = '';
         // Get the mario image
-  let marioImg = document.createElement('img');
-  let marioTxt = document.createElement('p');
+  
   //console.log('image tag created');
   // const randoMario = [Math.floor(Math.random() * marioPics.length)];
   //let targetMario = marioPics[randoMario];
@@ -165,14 +165,14 @@ questionBlock.addEventListener('click', function () {
       coins++;
       coinTotal.textContent = coins;
       coinSound.play();
-       bump.play();
+      bump.play();
       sessionStorage.setItem('savedCoins', coins);
       questionBlock.classList.add("coinBounce");
    } else {
       coins = 0;
       //    questionBlock.classList.remove("coinBounce");
       oneUp.play();
-       bump.play();
+      bump.play();
       coinSound.pause();
       coinTotal.textContent = coins;
       sessionStorage.setItem('savedCoins', 0);
