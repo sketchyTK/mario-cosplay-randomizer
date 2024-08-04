@@ -11,6 +11,7 @@
   <p align="center">
     Mario Cosplay Randomizer is an interactive application that provides an array of Mario cosplay ideas. It's the ideal application for enthusiasts of the Mario franchise looking for inspiration for their next cosplay.
     <br />
+    It is a group project made by three University of Minnesota Coding Boot Camp students, Keshon Mckie, Tony Kinney and Marcellus Khanyoo-Moona, as an exercise in using HTML, CSS and JavaScript to develop a web-based application with a modal window, local data storage and retrieval, and responsive web design. 
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -62,12 +63,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
