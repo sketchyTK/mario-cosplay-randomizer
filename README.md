@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://sketchytk.github.io/mario-cosplay-randomizer/" target="_blank">
     <img src="https://github.com/keshon16/Project-1-it-s-mee/blob/main/img/question-block.gif" alt="Logo" width="100" height="100">
   </a>
 
@@ -14,7 +14,7 @@
     It is a group project made by three University of Minnesota Coding Boot Camp students, Keshon Mckie, Tony Kinney and Marcellus Khanyoo-Moona, as an exercise in using HTML, CSS and JavaScript to develop a web-based application with a modal window, local data storage and retrieval, and responsive web design. 
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://sketchytk.github.io/mario-cosplay-randomizer/" target="_blank">View Demo</a>
   </p>
 </div>
 
@@ -44,7 +44,7 @@
 ## About The Project
 
 <div align=>
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://sketchytk.github.io/mario-cosplay-randomizer/" target="_blank">
     <img src="screenshot.png" alt="Logo" width="100%" height="auto">
   
 
@@ -85,7 +85,7 @@ Keshon Mckie: https://github.com/keshon16 <br>
 Tony Kinney: https://github.com/sketchyTK <br>
 Marcellus Khanyoo-Moona: https://github.com/Mkhanyoo
 
-Project Link:[(https://github.com/keshon16/Project-1-it-s-mee/tree/main)]
+Project Link:[(<a href="https://sketchytk.github.io/mario-cosplay-randomizer/" target="_blank">Mario Cosplay Randomizer</a>]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
