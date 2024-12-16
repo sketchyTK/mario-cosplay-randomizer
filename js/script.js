@@ -3,87 +3,37 @@ const marioModal = document.querySelector('.modal');
 const closeModal = document.querySelector('.closeModal');
 const marioName = document.querySelector('.marioName');
 //add an array of Mario images with text as well
-const babyMario = {
-   name: 'Baby',
-   src: './img/baby-mario.png',
-};
-const beeMario = {
-   name: 'Bee',
-   src: './img/bee-mario.png',
-};
-const booMario = {
-   name: 'Boo',
-   src: './img/boo-mario.png',
-};
-const builderMario = {
-   name: 'Builder',
-   src: './img/builder-mario.jpg',
-};
-const capeMario = {
-   name: 'Super',
-   src: './img/cape-mario.png',
-};
-const catMario = {
-   name: 'Cat',
-   src: './img/cat-mario.png',
-};
-const classicMario = {
-   name: 'OG',
-   src: './img/classic-mario.png',
-};
-const doctorMario = {
-   name: 'Doctor',
-   src: './img/dr-mario.png',
-};
-const elephantMario = {
-   name: 'Elephant',
-   src: './img/eleph-mario.jpg',
-};
-const fireMario = {
-   name: 'Fire',
-   src: './img/fire-mario.png',
-};
-const fluddMario = {
-   name: 'Sunshine',
-   src: './img/fludd-mario.png',
-};
-const frogMario = {
-   name: 'Frog',
-   src: './img/frog-mario.png',
-};
-const golfMario = {
-   name: 'Golf',
-   src: './img/golf-mario.jpg',
-};
-const propMario = {
-   name: 'Propellar',
-   src: './img/prop-mario.jpg',
-};
-const tanookiMario = {
-   name: 'Tanooki',
-   src: './img/tanooki-mario.png',
-};
-const trexMario = {
-   name: 'Dino',
-   src: './img/trex-mario.png',
-};
-const tuxMario = {
-   name: 'Tuxedo',
-   src: './img/tux-mario.png',
-};
-const marioGif = {
-   'src': './img/marios-gif.gif'
-};
+const babyMario = {name: 'Baby', src: './img/baby-mario.png'};
+const beeMario = {name: 'Bee', src: './img/bee-mario.png'};
+const booMario = {name: 'Boo',  src: './img/boo-mario.png'};
+const builderMario = {name: 'Builder',src: './img/builder-mario.jpg'};
+const capeMario = {name: 'Super',src: './img/cape-mario.png'};
+const catMario = {name: 'Cat', src: './img/cat-mario.png'};
+const classicMario = {name: 'OG',src: './img/classic-mario.png'};
+const doctorMario = {name: 'Doctor',src: './img/dr-mario.png'};
+const elephantMario = {name: 'Elephant',src: './img/eleph-mario.jpg'};
+const fireMario = {name: 'Fire', src: './img/fire-mario.png'};
+const fluddMario = {name: 'Sunshine',src: './img/fludd-mario.png'};
+const frogMario = {name: 'Frog', src: './img/frog-mario.png'};
+const golfMario = {name: 'Golf', src: './img/golf-mario.jpg'};
+const propMario = {name: 'Propellar', src: './img/prop-mario.jpg'};
+const tanookiMario = {name: 'Tanooki', src: './img/tanooki-mario.png'};
+const trexMario = {name: 'Dino', src: './img/trex-mario.png'};
+const tuxMario = {name: 'Tuxedo', src: './img/tux-mario.png'};
+const marioGif = {'src': './img/marios-gif.gif'};
 
-//console.log(babyMario);
 const marioPics = [babyMario, builderMario,catMario, beeMario, booMario, capeMario, classicMario, doctorMario,elephantMario,fireMario,fluddMario,frogMario,golfMario,propMario,tanookiMario,trexMario,tuxMario];
 
-//console.log(marioPics);
 const displayMarioPic = function () {
    let marioImg = document.createElement('img');
    let marioTxt = document.createElement('p');
    //display modal -> 
+   const marioModalWrapper = document.getElementById('marioModalWrapper');
+   while (marioModalWrapper.firstChild) {
+      marioModalWrapper.removeChild(marioModalWrapper.firstChild);
+   }
    marioModal.setAttribute( 'style', 'display: block;');
+   console.log('modal style changed');
    let secondsLeft = 2;
    function setTime() {   
    let timerInterval = setInterval(function () { 
@@ -111,17 +61,8 @@ const displayMarioPic = function () {
       'src', marioGif['src']
    );
    document.getElementById('marioModalWrapper').appendChild(playMarioGif); 
-  // console.log(getPlayerName);
-  // console.log(player1Name);
-   // Clear the top player table
- // randoMario.innerHTML = '';
-        // Get the mario image
-  
-  //console.log('image tag created');
-  // const randoMario = [Math.floor(Math.random() * marioPics.length)];
-  //let targetMario = marioPics[randoMario];
+
    let targetMario = marioPics[Math.floor(Math.random() * marioPics.length)];
-//   console.log(targetMario);
   marioImg.setAttribute(
         'src' , targetMario['src']
     );
@@ -129,10 +70,7 @@ const displayMarioPic = function () {
    marioTxt.setAttribute('style', 'display: none;');
    marioName.setAttribute('style', 'display: none;');
    const randomMarioName = targetMario['name'];
- //  console.log(randomMarioName);
    marioTxt.textContent = `You've Got ${randomMarioName} Mario!`;
-   //display randomized Mario image
-//   console.log(marioTxt);
    localStorage.setItem('marioPlayerName', randomMarioName);
 
    marioName.textContent = `${randomMarioName} ${player1Name}`;
@@ -144,19 +82,26 @@ const displayMarioPic = function () {
 
    closeModal.addEventListener('click', () => {
       marioModal.setAttribute('style', 'display: none;');
+      playMarioGif.remove();
       marioImg.remove();
       marioTxt.remove();
    }
    );
+   document.addEventListener('click', function (event) {
+      if (marioModal.style.display !== 'none' && !marioModal.contains(event.target)) {
+         marioModal.setAttribute('style', 'display: none;');
+         playMarioGif.remove();
+         marioImg.remove();
+         marioTxt.remove();
+         console.log('user click');
+      }
+   });
 };
-marioModal.addEventListener('click', function(event)
-{
-   if (!marioModal.contains(event.target)) {
-      marioModal.setAttribute('style', 'display: none;');
-      marioImg.remove();
-      marioTxt.remove();
-   }
+
+document.getElementById('submit').addEventListener('click', function (event) {
+   event.stopPropagation(); 
 });
+
 //Add Event Listener - click - submit
 player1submit.addEventListener('click', displayMarioPic);
 
