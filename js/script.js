@@ -149,7 +149,14 @@ const displayMarioPic = function () {
    }
    );
 };
-
+marioModal.addEventListener('click', function(event)
+{
+   if (!marioModal.contains(event.target)) {
+      marioModal.setAttribute('style', 'display: none;');
+      marioImg.remove();
+      marioTxt.remove();
+   }
+});
 //Add Event Listener - click - submit
 player1submit.addEventListener('click', displayMarioPic);
 

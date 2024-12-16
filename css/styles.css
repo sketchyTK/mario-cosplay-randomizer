@@ -173,7 +173,18 @@ main form input::placeholder {
     color: white;
 }
 
-main p.topPlayer {margin-top: 50px;}
+main p.topPlayer {
+    margin-top: 50px;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.marioName {
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 800px;   
+}
 
 .modal {
     width: 665px;
@@ -222,6 +233,8 @@ main p.topPlayer {margin-top: 50px;}
         top: 30%; 
     } 
 }
+
+.marioName {overflow: hidden;}
 
 .mcr-bg {
     display: flex;
